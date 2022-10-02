@@ -1,0 +1,21 @@
+ls: cannot access 'non': No such file or directory
+BasicComands.md
+backup
+err.log
+morefruit.txt
+new.txt
+one
+output.txt
+two
+j
+a
+andy
+b
+1
+22
+e
+cat
+c
+d
+3
+words 
