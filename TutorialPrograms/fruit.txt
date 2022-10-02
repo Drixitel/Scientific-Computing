@@ -1,9 +1,0 @@
-j
-a
-b
-e
-c
-d
-6.b 
-3 lines total 
-one per desired output (typo)
