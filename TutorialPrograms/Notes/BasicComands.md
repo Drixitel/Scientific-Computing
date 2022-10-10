@@ -72,7 +72,7 @@
 - `grep -il WorD *.txt`: gives all the files that contain the word
 - `grep -rli WorD .`: find all case insensitive instances within all subdirectories
 - `which`
-  - e.g.:` which ls` : tells about ls
+  - e.g.:`which ls` : tells about ls
 - `whereis`
   - e.g.: `whereis ls` : tells where the file is
 
@@ -85,7 +85,7 @@
   - e.g.:
     - `ls *.??`
     - show all files with only two end characters,as in
-      - `.md, .sh, .ex `...
+      - `.md, .sh, .ex`...
 - `[]` shows a range of characters
   - e.g.: `ls [e-f]*`
     - shows any file that starts with e or f
