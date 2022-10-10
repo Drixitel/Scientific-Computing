@@ -4,7 +4,7 @@ program loops2
 
   implicit none
   integer :: i,j,jmax
-
+  ! good to use to avoid infinite loop
   i = 0
   jmax = 100
   do j=1,jmax        ! prints 0,1,2,3,4

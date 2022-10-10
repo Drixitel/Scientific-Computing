@@ -4,16 +4,23 @@ program array1
 
   ! demonstrate declaring and using arrays
 
+  ! MATRIX: ROW X COLOUMN 
   implicit none
-  integer, parameter:: dp = selected_real_kind(15) ! Integer constant for precision
+  integer, parameter:: dp = selected_real_kind(5) ! Integer constant for precision
+  ! SET the SIZES for arrays
   integer, parameter :: m = 3, n = 2               ! Integer constants for array sizes
+  ! CREATE ARRAYS
+  ! MATRIX:
   real (dp), dimension(m,n) :: A                   ! Rank 2 array (matrix 3 x 2)
+  ! ARRAY
   real (dp), dimension(m) :: b                     ! Rank 1 array, size 3
+  ! ARRAY
   real (dp), dimension(n) :: x                     ! Rank 1 array, size 2
+  ! OTHER USED VARIABLES
   integer :: i, j                                  ! Loop variables
 
   ! Initialize matrix A and vector x:
-  ! Note that i and j get promoted to double precision on assignment into A
+  ! NOTE: that i and j get promoted to double precision on assignment into A
   do j=1,n
     do i=1,m
       A(i,j) = i + j

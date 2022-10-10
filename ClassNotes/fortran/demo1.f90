@@ -4,33 +4,62 @@
 ! than mixing matching like this file does. This is
 ! just for illustration
 
+! .f90 files always start with program {filename}
+!   and end with end program (filename)
+!   Can only have one pair of (program,end program)
+
+! Start Code -----------------------------------------------
 program demo1
 
-  implicit none !! turns off assumed typing 
-  !! also if a variable is added without first declaring it will thow an error (needs implicit none) 
-  integer, parameter :: fp = selected_real_kind(7) !! parameter is like constant 
-  integer, parameter :: dp = selected_real_kind(15) !!selected real kind (places past dec)
-  real :: x   !! floating point rep. of x 
-  real (kind=dp) :: y,z   !! memory speace (kind), 
-  integer :: m    !! not a parameter so it can be changed
-  real (dp) :: i    !! don't need to write kind, but does the same (just here to show)
+  implicit none 
+  ! implicit none :
+  !   Removes an unwanted feature where the code determines 
+  !   The type of variable you want just by the name of the variable 
+  !   E.g. if the variable is i,j,k the compilier will think you want
+  !         it to be an integer. 
+! Define Variables --------------------------------------------
+  integer, parameter :: fp = selected_real_kind(7) ! Use this format
+  ! integer: is a type 
+  ! parameter: takes the role of constant
+  !   There for the integer {fp} will never change its value
+  ! selected_real_kind() and kind= : PRECISION/MEMORY
+  !    kind = 4 : single precision 4 bytes
+  !    kind = 8 : double 
+  !    selected_real_kind(#): I want at least # places 
+  !         past the decimal
+  integer, parameter :: dp = selected_real_kind(15) 
+  real :: x   
+  ! floating point rep. of variable x
+  real (kind=dp) :: y,z ! do this format 
+  ! kind: related to memory space/precision of variable 
+  integer :: m    
+  ! Variable {m} is not assigned keyword parameter so it can be changed later in code
+  real (dp) :: i,a    ! do not do this format
+  ! keyword kind is omitted, however it is still specified 
+  ! anything not declared will throw an error 
 
+! Test Code -------------------------------------------------------------------------
   ! Comment out implicit none and the declaration for i, then observe
   ! what the following lines do:
-  ! i = 10
-  ! print*, i
-  ! i = 10.2394872938479287
-  ! print *,i
-  ! a = 1.3234 !! notice a is not defined, but it can appear, but it will become a type real 
-  !! variables become certain types depending on the nameing (not bc of anything else)
-  !! e.g: i,j,k are integrers etc. 
-  !! this occurs bc implicit none is not included 
-  ! print*,a
+  i = 10
+  print*, i
+  print*, "i = 10 but implicit assignment will change it"
 
-  !! bunch of print statements 
+  i = 10.2394872938479287
+  print *,i
+  print*, "now, i = 10.2394872938479287 but implicit assignment will change it"
+
+  a = 1.3234 
+  !  NOTE:  a is not formally defined, but we have no issue
+  !         implicit will assign it by force if we do not have {implicit none}
+  print*,a
+  print*, "a = 1.3234 but implicit assignment will change it"
+
+! Bunch of print statements ---------------------------------------------------------
   m = 3
   print *, " "
-  print *, "M = ", M   ! note that M is the same as m  (case insensitive)
+  print *, "M = ", M   
+! NOTE: that M is the same as m  (It is case IN-sensitive)
 
 
   print *, " "

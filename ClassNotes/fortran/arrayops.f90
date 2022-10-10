@@ -11,9 +11,13 @@ program arrayops
   real(dp), dimension(3) :: y
   integer :: i
 
+! HIGHER RANK
   a = reshape((/1,2,3,4,5,6/), (/3,2/))
-  ! all listed literally then reshaped into a 3x2
-
+  ! all listed literally then reshaped into a 3x2 rowxcolumn
+  ! A = 14
+  !     25
+  !     36
+  
   print *, "a = "
   do i=1,3
     print *, a(i,:)   ! i'th row (slicing)
@@ -32,7 +36,7 @@ program arrayops
     print *, c(i,:)   ! i'th row
   end do
 
-  x = (/5,6/) !this sets an array as a literal
+  x = (/5,6/) !this sets an array as a literal notation
   ! this wil fil the rank 1 array with the values 5,6
   y = matmul(a,x)
   print *, "x = ",x
