@@ -7,9 +7,9 @@ module circle_mod3
   private
   
   integer, parameter, public :: fp = selected_real_kind(15)
-  real (fp), save :: pi
+  real (fp), save :: pi ! this is the only thing private
 
-  ! Public interface
+  ! Public interface --All public subroutines 
   public :: initialize
   public :: area
   public :: circumference
