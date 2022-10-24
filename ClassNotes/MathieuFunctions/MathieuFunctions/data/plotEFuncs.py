@@ -39,3 +39,6 @@ if __name__ == "__main__":
     plt.show()
 
 # %%
+# x,w,V = readData('Mathieu_201_40.dat')
+# trimData(x,w,V)
+# %%
