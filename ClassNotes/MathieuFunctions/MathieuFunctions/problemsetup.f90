@@ -43,6 +43,7 @@ contains
     
     ! Set the output file, note that // does string concatenation
     outFile = 'data/' // trim(runName) // '.dat'
+    
   end subroutine problemsetup_Init
 
   ! function: read_initFileReal
