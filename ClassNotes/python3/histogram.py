@@ -4,7 +4,7 @@
 """
 # %%
 def histogram(s):
-    # initialize with an empty dictionary
+    # initialize with an empty dictionary !!!! ONLY CHECKS THE KEYS
     d = dict()
 
     for c in s:
@@ -21,7 +21,7 @@ def histogram(s):
     return d
 
 
-def histogram_ternary(s):
+def histogram_ternary(s):  # ternary = collapse the if statement to one line
 
     # This is exactly the same as histogram
     # but using a so-called 'ternary operator':
