@@ -22,10 +22,12 @@ def lorenz(t, y):  # time is not used, but required as a parameter
 
 
 if __name__ == "__main__":
+
     # Set initial condition and solve
     t0, tf = 0.0, 100.0
     dt_max = 0.02
     y0 = np.ones(3)
+
     sol = solve_ivp(
         lorenz, (t0, tf), y0, max_step=dt_max
     )  # max step limited for pretty plots
