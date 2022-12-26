@@ -31,3 +31,7 @@ poetry update
 SSHSetup
 
 - contains a markdown with brief info on SSH for UCSC gitlab
+
+BasicLinuxCommands.md
+
+- contains as name suggest and git commands

@@ -19,11 +19,11 @@
 # Error Messages
 
 - live in the channel called Standard Error `stderr`
-- using `2>, 2>>` makes it so the standard message, which might be a blank overwriting of a file bc the first file DNE instead will write the erro into the file so you're aware that an error occured.
+- using `2>, 2>>` makes it so the standard message, which might be a blank overwriting of a file bc the first file DNE instead will write the erro into the file so you're aware that an error occurred.
 - Actually I have no idea
   - `cat filename1 2>> otherfile`: seems to only show file 1 contents on terminal but not overwrite/append otherfile.
   - IF `cat filethatdoesnotexists 2>> otherfile` is used it will append otherfile and say the file DNE
-  - IF `cat filethatdoesnotexists 2> otherfile` is used it will overwite the file and say it DNE
+  - IF `cat filethatdoesnotexists 2> otherfile` is used it will overwrite the file and say it DNE
 - redirect input into an output file
   - e.g `wc -l < filename1 >> output_wordcount.txt`
     - this takes the command word count and applies it to file 1 then takes that output #number of lines and appends it to the output txt file.
@@ -51,7 +51,7 @@
   - e.g.:
     - cd into a dir and rm all contents in final dir
     - cd dir1/dir2 && rm\*
-- `||`: runs the secodn only if the first fails
+- `||`: runs the second only if the first fails
 - `;`: lets you put multiple commands all on one line running unconditionally - runs all at the same time
 
 # Putting the error messages in a file
