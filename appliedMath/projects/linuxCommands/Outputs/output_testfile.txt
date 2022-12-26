@@ -1,0 +1,3 @@
+936K	/home/drixit/2022Projects/pichardomichelle-am129-fall2022
+828K	/home/drixit/2022Projects/pichardomichelle-am129-fall2022/.git
+656K	/home/drixit/2022Projects/pichardomichelle-am129-fall2022/.git/objects

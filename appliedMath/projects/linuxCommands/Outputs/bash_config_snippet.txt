@@ -1,0 +1,11 @@
+Number 8: 
+Bash function 
+
+# Print upper dir
+function pwd_up() {
+    CURRENTDIR=$(pwd);
+    cd $(printf "%0.0s../" $(seq 1 $1));
+    pwd;
+    cd $CURRENTDIR;
+}
+alias 'pwd..'='pwd_up'
