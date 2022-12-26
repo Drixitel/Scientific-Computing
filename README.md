@@ -2,17 +2,17 @@
 
 - Notes `not` projects
 
-Languages:
+### Languages:
 
 - Python
 - Fortran
 - C
 
-Environment manager:
+### Environment manager:
 
 - Poetry
 
-Commands:
+### Commands:
 
 - if cloning use the following to install all required packages
 
