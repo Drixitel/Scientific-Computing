@@ -25,3 +25,9 @@ poetry install
 ```
 poetry update
 ```
+
+### Files
+
+SSHSetup
+
+- contains a markdown with brief info on SSH for UCSC gitlab
