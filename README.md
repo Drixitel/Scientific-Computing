@@ -8,6 +8,13 @@
 - Fortran
 - C
 
+### Subjects:
+
+- statistics
+- astrophysics
+- physics
+- applied mathematics
+
 ### Environment manager:
 
 - Poetry
