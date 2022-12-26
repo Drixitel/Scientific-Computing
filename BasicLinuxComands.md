@@ -64,13 +64,20 @@
 
 # Find
 
-- `find`
-- `grep word *.txt`: find all .txt files taht contain the word "word"
+- `find`: searches any dir and sub dir
+  - `find . -name file.txt`
+
+# Grep (also finding)
+
+- Search the contents of any file
+- `grep word *.txt`: find all .txt files that contain the word "word"
 - `grep -i WorD *.txt`: find all with out the case
-  sensitiveity
+  sensitivity
 - `grep -in WorD *.txt`: find the file and show the line it is found in
 - `grep -il WorD *.txt`: gives all the files that contain the word
 - `grep -rli WorD .`: find all case insensitive instances within all subdirectories
+- Search Recursively:
+  - `greop -rli aPPle .`
 - `which`
   - e.g.:`which ls` : tells about ls
 - `whereis`
@@ -107,3 +114,5 @@
   - `git checkout ID230482` ID found from prev. command -able to look around
   - `git checkout main` return to future
 - `git checkout -- filename` : if you did not like the changes you made to this particular file this command will return it to the most recent saved version !
+
+# Fortran

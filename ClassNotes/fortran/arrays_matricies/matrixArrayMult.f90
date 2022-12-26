@@ -1,5 +1,5 @@
 ! /codes/array1
-
+! Contains: Matrix, Arrays, Matrix multiplication
 program array1
 
   ! demonstrate declaring and using arrays

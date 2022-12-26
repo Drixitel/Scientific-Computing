@@ -20,9 +20,9 @@ program solve1
   integer :: i, info, lda, ldb, nrhs
   integer, dimension(n) :: ipiv
 
-  a = reshape((/1._fp, 2._fp, 2._fp, 0._fp, -4._fp, -6._fp, 0._fp, 0._fp, -1._fp/), (/n,n/))
-  b = (/3._fp,-6._fp,1._fp/)
-  x = b
+  a = reshape((/1._fp, 2._fp, 2._fp, 0._fp, -4._fp, -6._fp, 0._fp, 0._fp, -1._fp/), (/n,n/)) ! Matrix
+  b = (/3._fp,-6._fp,1._fp/)  ! targt 
+  x = b ! solutoni
 
   nrhs = 1
   lda = n

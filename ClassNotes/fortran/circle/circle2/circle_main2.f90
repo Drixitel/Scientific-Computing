@@ -8,6 +8,8 @@ program circle_main2
 
   call initialize()   ! sets pi
 
+  print *, "File circle_main2.f90"
+
   ! print module variable pi:
   print *, 'pi = ', pi
 

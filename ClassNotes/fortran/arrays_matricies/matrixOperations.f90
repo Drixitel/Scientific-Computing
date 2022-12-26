@@ -1,5 +1,5 @@
 ! /codes/arrayops.f90
-
+! Matrix manip and preset functions 
 program arrayops
 
   implicit none
@@ -14,9 +14,9 @@ program arrayops
 ! HIGHER RANK
   a = reshape((/1,2,3,4,5,6/), (/3,2/))
   ! all listed literally then reshaped into a 3x2 rowxcolumn
-  ! A = 14
-  !     25
-  !     36
+  ! A = 1 4
+  !     2 5
+  !     3 6
   
   print *, "a = "
   do i=1,3

@@ -6,6 +6,7 @@ program circle_main
   implicit none
   real (fp) :: a
 
+  print *, "File circle_main.f90"
   ! print parameter pi defined in module:
   print *, 'pi = ', pi
 
