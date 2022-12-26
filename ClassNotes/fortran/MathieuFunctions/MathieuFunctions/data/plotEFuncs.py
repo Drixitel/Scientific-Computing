@@ -36,6 +36,7 @@ if __name__ == "__main__":
     plt.title(r"All Mathieu functions with $a<" + sys.argv[2] + r"$")
     plt.xlabel(r"$x$")
     plt.ylabel(r"$y$")
+    plt.savefig("test1.png")
     plt.show()
 
 # %%
