@@ -1,13 +1,13 @@
 # Find .SSH File from WSL
 
 - run command explorer.exe .
-- will open a file exploer from the current directory and allow the user to find required folder/files
+- will open a file explorer from the current directory and allow the user to find required folder/files
 
 # Public and Private key
 
 - must match to allow access
 - Public Key can go everywhere but not Private
-  - for sec. reasons
+  - for security reasons
 
 # increase length of bits
 
@@ -15,11 +15,11 @@
 
 # Passphrase
 
-- create one and add sec.
+- create one and add security
 
 # Checking if it works
 
-Instance URL is git.ucsc.edu and it will find your info from your key
+Instance URL is `git.ucsc.edu` and it will find your info from your key
 
 - `ssh -T git@git.ucsc.edu`
 - new?
